@@ -97,37 +97,46 @@ export function Nav() {
       </header>
 
       {open && (
-        <div
-          className="fixed inset-0 z-[60] bg-cream md:hidden"
-          role="dialog"
-          aria-modal="true"
-          aria-label="Mobile navigation"
-        >
-          <div className="flex h-full min-h-[100dvh] flex-col items-center justify-center gap-7 px-6 pb-8 pt-24">
-            <ul className="flex w-full max-w-sm flex-col items-center gap-6">
-              {links.map((link) => (
-                <li key={link.href} className="w-full text-center">
-                  <a
-                    href={link.href}
-                    className="block font-[family-name:var(--font-display)] text-3xl text-charcoal"
-                    onClick={() => setOpen(false)}
-                  >
-                    {link.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
-            <a
-              href="https://www.instagram.com/lovebabeandbean/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="rounded-full bg-blue px-8 py-3.5 text-sm font-semibold text-white"
-              onClick={() => setOpen(false)}
-            >
-              Follow on Instagram
-            </a>
+        <>
+          <button
+            type="button"
+            className="fixed inset-0 z-[55] bg-charcoal/45 backdrop-blur-[2px] md:hidden"
+            aria-label="Close menu"
+            onClick={() => setOpen(false)}
+          />
+
+          <div
+            className="fixed inset-x-0 top-[4.25rem] z-[65] px-5 md:hidden"
+            role="dialog"
+            aria-modal="true"
+            aria-label="Mobile navigation"
+          >
+            <div className="mx-auto max-w-sm rounded-2xl border border-white/20 bg-cream/95 p-6 shadow-2xl backdrop-blur-md">
+              <ul className="flex flex-col gap-1">
+                {links.map((link) => (
+                  <li key={link.href}>
+                    <a
+                      href={link.href}
+                      className="block rounded-xl px-4 py-3.5 font-[family-name:var(--font-display)] text-2xl text-charcoal transition hover:bg-white/60"
+                      onClick={() => setOpen(false)}
+                    >
+                      {link.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+              <a
+                href="https://www.instagram.com/lovebabeandbean/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 block rounded-full bg-blue py-3.5 text-center text-sm font-semibold text-white"
+                onClick={() => setOpen(false)}
+              >
+                Follow on Instagram
+              </a>
+            </div>
           </div>
-        </div>
+        </>
       )}
     </>
   );
