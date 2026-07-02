@@ -4,9 +4,7 @@ export function Footer() {
   return (
     <footer className="border-t border-charcoal/5 bg-cream py-12">
       <div className="mx-auto flex max-w-6xl flex-col items-center gap-8 px-5 text-center md:px-8">
-        <div className="text-blue">
-          <Logo />
-        </div>
+        <Logo variant="wordmark" className="mx-auto" />
 
         <p className="script-accent text-2xl text-blue">made with love</p>
         <p className="mt-2 max-w-md text-sm leading-relaxed text-muted">
@@ -42,6 +40,18 @@ export function Footer() {
         <p className="text-xs text-muted">
           © {new Date().getFullYear()} Love Babe & Bean. All rights reserved.
         </p>
+
+        <a
+          href="https://veluno.studio"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group inline-flex items-center gap-1.5 text-xs text-muted transition hover:text-charcoal"
+        >
+          Website designed &amp; built by
+          <span className="font-semibold text-blue group-hover:text-blue-dark">
+            Veluno
+          </span>
+        </a>
       </div>
     </footer>
   );

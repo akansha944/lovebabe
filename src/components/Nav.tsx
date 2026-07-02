@@ -38,12 +38,8 @@ export function Nav() {
       }`}
     >
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4 md:px-8">
-        <a
-          href="#"
-          className={`transition-colors ${onHero ? "text-white drop-shadow-sm" : "text-blue"}`}
-          aria-label="Love Babe & Bean home"
-        >
-          <Logo />
+        <a href="#" aria-label="Love Babe & Bean home">
+          <Logo variant="mark" />
         </a>
 
         <ul className="hidden items-center gap-8 md:flex">
