@@ -1,0 +1,132 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cream: #faf8f5;
+  --color-cream-dark: #f0ebe4;
+  --color-blue: #2f5fd4;
+  --color-blue-dark: #244ba8;
+  --color-blue-light: #e8effc;
+  --color-matcha: #4a7c3f;
+  --color-matcha-light: #6b9e5a;
+  --color-matcha-pale: #e8f0e6;
+  --color-wood: #c9a87c;
+  --color-charcoal: #1a1a1a;
+  --color-muted: #6b6b6b;
+  --color-grout: #2a2a2a;
+
+  --color-background: #faf8f5;
+  --color-foreground: #1a1a1a;
+
+  --font-sans: var(--font-dm-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-script: var(--font-sacramento), cursive;
+  --font-display: var(--font-cormorant), ui-serif, Georgia, serif;
+}
+
+* {
+  border-color: color-mix(in srgb, var(--color-charcoal) 8%, transparent);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-cream);
+  color: var(--color-charcoal);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: var(--color-blue);
+  color: white;
+}
+
+@keyframes lbb-rise {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes lbb-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes lbb-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.animate-rise {
+  animation: lbb-rise 0.85s ease-out both;
+}
+
+.animate-marquee {
+  animation: lbb-marquee 28s linear infinite;
+}
+
+.animate-float {
+  animation: lbb-float 4s ease-in-out infinite;
+}
+
+/* Watermark tile grid — marquee band (checks above & below blue bar) */
+.tile-watermark {
+  background-color: var(--color-cream);
+  background-image:
+    linear-gradient(
+      color-mix(in srgb, var(--color-charcoal) 3.5%, transparent) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      color-mix(in srgb, var(--color-charcoal) 3.5%, transparent) 1px,
+      transparent 1px
+    );
+  background-size: 36px 36px;
+  background-position: center center;
+}
+
+.gradient-border {
+  background: linear-gradient(135deg, #ffd54f, #ff8a65, #f48fb1, #9575cd, #64b5f6);
+  padding: 3px;
+  border-radius: 9999px;
+}
+
+.script-accent {
+  font-family: var(--font-script);
+}
+
+.bento-card {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.bento-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px -12px color-mix(in srgb, var(--color-charcoal) 18%, transparent);
+}
+
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
