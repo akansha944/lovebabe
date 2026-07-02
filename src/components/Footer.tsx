@@ -4,7 +4,9 @@ export function Footer() {
   return (
     <footer className="border-t border-charcoal/5 bg-cream py-12">
       <div className="mx-auto flex max-w-6xl flex-col items-center gap-8 px-5 text-center md:px-8">
-        <Logo variant="wordmark" className="mx-auto" />
+        <div className="text-blue">
+          <Logo />
+        </div>
 
         <p className="script-accent text-2xl text-blue">made with love</p>
         <p className="mt-2 max-w-md text-sm leading-relaxed text-muted">
