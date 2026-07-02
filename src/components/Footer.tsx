@@ -42,7 +42,7 @@ export function Footer() {
         </p>
 
         <a
-          href="https://veluno.studio"
+          href="https://veluno.digital"
           target="_blank"
           rel="noopener noreferrer"
           className="group inline-flex items-center gap-1.5 text-xs text-muted transition hover:text-charcoal"
