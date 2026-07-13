@@ -43,7 +43,7 @@ export function Hero() {
               className="animate-rise mt-6 max-w-md text-base leading-relaxed text-white/80 md:text-lg"
               style={{ animationDelay: "0.2s" }}
             >
-              A cosy hole-in-the-wall on Osbourne Lane — specialty matcha, cold
+              A cosy hole-in-the-wall on Osbourne Lane, specialty matcha, cold
               brew with cold foam, and sweet treats worth the detour.
             </p>
 

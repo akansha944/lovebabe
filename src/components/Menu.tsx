@@ -71,7 +71,7 @@ const menu: MenuCategory[] = [
       },
       {
         name: "Daily Pastries",
-        description: "Croissants and bakes — ask what's in",
+        description: "Croissants and bakes, ask what's in",
       },
       {
         name: "Seasonal Specials",
@@ -95,7 +95,7 @@ export function Menu() {
             </h2>
           </div>
           <p className="text-muted lg:text-right">
-            Specialty matcha and cold brew with cold foam — made fresh Wed through
+            Specialty matcha and cold brew with cold foam, made fresh Wed through
             Sat. Check Instagram for today&apos;s lineup.
           </p>
         </div>

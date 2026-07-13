@@ -86,7 +86,7 @@ body {
   animation: lbb-float 4s ease-in-out infinite;
 }
 
-/* Watermark tile grid — marquee band (checks above & below blue bar) */
+/* Watermark tile grid: marquee band (checks above & below blue bar) */
 .tile-watermark {
   background-color: var(--color-cream);
   background-image:

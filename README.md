@@ -1,6 +1,6 @@
 # Love Babe & Bean
 
-A standalone marketing website for [Love Babe & Bean](https://www.instagram.com/lovebabeandbean/) — a cosy hole-in-the-wall coffee and matcha shop in Newmarket, Auckland.
+A standalone marketing website for [Love Babe & Bean](https://www.instagram.com/lovebabeandbean/), a cosy hole-in-the-wall coffee and matcha shop in Newmarket, Auckland.
 
 ## Getting Started
 

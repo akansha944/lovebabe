@@ -28,7 +28,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Love Babe & Bean — Hand-Whisked Matcha & Coffee",
+  title: "Love Babe & Bean | Hand-Whisked Matcha & Coffee",
   description:
     "A cosy hole-in-the-wall coffee and matcha shop in Newmarket, Auckland. Hand-whisked matcha, cold brew with cold foam, and sweet treats.",
   openGraph: {

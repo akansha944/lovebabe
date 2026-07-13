@@ -10,7 +10,7 @@ export function Footer() {
 
         <p className="script-accent text-2xl text-blue">made with love</p>
         <p className="mt-2 max-w-md text-sm leading-relaxed text-muted">
-          Hand-whisked matcha, cold brew with cold foam, and sweet treats —
+          Hand-whisked matcha, cold brew with cold foam, and sweet treats,
           made with love in Newmarket.
         </p>
 

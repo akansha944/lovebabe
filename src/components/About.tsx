@@ -23,7 +23,7 @@ export function About() {
             <span className="italic text-blue">matcha addicts</span>
           </h2>
           <p className="mt-6 text-base leading-relaxed text-muted md:text-lg">
-            Love Babe & Bean is a hole-in-the-wall coffee and matcha shop —
+            Love Babe & Bean is a hole-in-the-wall coffee and matcha shop,
             hand-whisked matcha, cold brew with cold foam, specialty drinks,
             and sweet treats that keep people coming back.
           </p>
